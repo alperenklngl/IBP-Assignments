@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+&rarr;    <div class="container">
+    <div class="container2">
+        <button id="btn">RUN</button>
+        <div id="out">0</div>
+    </div>
+</div>
+
+
+
+<script>
+    const button = document.getElementById('btn');
+    const box = document.getElementById('out');
+
+    let number = 0;
+
+    button.addEventListener('click', () => {
+        number += 7;
+        box.innerText = `${number}`;
+    })
+
+</script>
+    <p> back to   <a  href="homework.html">previous page </a> </p>
+</body>
+</html>
