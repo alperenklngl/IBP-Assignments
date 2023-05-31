@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alperen Kolenoğlu">
+    <meta name="description" content="This website's content is personal informations and data time.">
+    <meta name="generator" content="Alperen ">
+    <meta name="keywords" content="phoneNumber, e-mail, date,">
+
+    <title>HomeWork3</title>
+    <script>
+        function fetch(){
+            let get = document.getElementById("get").value;
+            document.getElementById("put").value=get;
+        }
+    </script>
+</head>
+<body>
+        <form action="" method="get" enctype="multipart/form-data">
+           hidden:  <input type="hidden" name="hiddenField" value="hiddenValue"> <br>
+              <p> &rarr;phone number:     <input  type="tel"   name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> </p>
+
+            <p> &rarr; e-mail:    <input type="email" name="emailAddress" placeholder="Enter your email address">   </p>
+            <p> &rarr; pick a number:     <input type="number" name="quantity" min="1" max="100" step="1" value="1">  </p>
+            &rarr;searching <input  type="search" name="searchQuery" placeholder="Search"> <br>
+
+            <div class="rating">
+                <label for="rate">
+                    <br> &rarr;  rate us here 1-100 <br>
+                 &mdash;  <input type="range" min="0" max="100" id="get" step="1" onchange="fetch()"><br>
+                    <input type="text" id="put">
+                    <input type="submit" value="submit" id="rate">
+                </label>
+            </div>
+         <br> &rarr; upload image   <input type="image" height="289"   src="kedii.jpg" alt="Submit">
+
+              <p> &rarr; choose a week <input type="week" name="selectedWeek" min="2023-W01" max="2023-W52" value="2023-W26">    </p>
+             <p> &rarr; write a url  <input type="url" name="websiteURL" placeholder="Enter website URL">                </p>
+             <p> &rarr;  choose time <input type="time" name="selectedTime" min="00:00" max="23:59" value="12:00"> </p>
+             <p>&rarr;  choose month <input type="month" name="selectedMonth" min="2023-01" max="2023-12" value="2023-06">   </p>
+
+            <p>&rarr; choose datetime <input type="datetime-local" name="dateTime" min="2023-01-01T00:00" max="2023-12-31T23:59" value="2023-06-01T12:00">    </p>
+
+        </form>
+
+        <font color="red">Submit all informations. </font>&rarr; <input type="submit" value="submit" id="">
+</body>
+</html>
